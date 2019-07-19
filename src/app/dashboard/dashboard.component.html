@@ -1,3 +1,14 @@
-<h1>Home</h1>
-<p>The Global Economy</p>
+
+<mat-toolbar color="warn">
+    
+    <div class="title">Global Economy</div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+            <li><a routerLink="/">Debt</a></li>
+            <li><a routerLink="/">Equity</a></li>
+            
+        </ul>
+
+    </div>
+</mat-toolbar>
 <router-outlet></router-outlet>
