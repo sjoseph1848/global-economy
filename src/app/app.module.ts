@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LineComponent } from './charts/components/line/line.component';
 import { PieComponent } from './charts/components/pie/pie.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LineComponent,
-    PieComponent
+    PieComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
