@@ -18,3 +18,24 @@ a:hover,
 a:active {
     color:lightgray;
 }
+
+.head {
+    text-align:center;
+}
+
+.example-container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+
+  .example-sidenav {
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background: #3D41B9;
+  }
