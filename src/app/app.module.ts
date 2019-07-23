@@ -12,6 +12,7 @@ import { LineComponent } from './charts/components/line/line.component';
 import { PieComponent } from './charts/components/pie/pie.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { InfoSectionComponent } from './info-section/info-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     LineComponent,
     PieComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    InfoSectionComponent
   ],
   imports: [
     BrowserModule,
