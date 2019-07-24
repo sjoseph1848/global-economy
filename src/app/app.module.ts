@@ -13,6 +13,10 @@ import { PieComponent } from './charts/components/pie/pie.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
+import { ChartSectionComponent } from './charts/chart-section/chart-section.component';
+import { DebtSectionComponent } from './charts/debt-section/debt-section.component';
+import { InterestSectionComponent } from './charts/interest-section/interest-section.component';
+import { MarketSectionComponent } from './charts/market-section/market-section.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { InfoSectionComponent } from './info-section/info-section.component';
     PieComponent,
     NavbarComponent,
     SidenavComponent,
-    InfoSectionComponent
+    InfoSectionComponent,
+    ChartSectionComponent,
+    DebtSectionComponent,
+    InterestSectionComponent,
+    MarketSectionComponent
   ],
   imports: [
     BrowserModule,
