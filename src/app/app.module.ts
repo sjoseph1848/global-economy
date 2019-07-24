@@ -17,6 +17,7 @@ import { ChartSectionComponent } from './charts/chart-section/chart-section.comp
 import { DebtSectionComponent } from './charts/debt-section/debt-section.component';
 import { InterestSectionComponent } from './charts/interest-section/interest-section.component';
 import { MarketSectionComponent } from './charts/market-section/market-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MarketSectionComponent } from './charts/market-section/market-section.c
     ChartSectionComponent,
     DebtSectionComponent,
     InterestSectionComponent,
-    MarketSectionComponent
+    MarketSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
