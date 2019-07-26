@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {FinanceService} from './finance.service';
+import {HttpClientModule} from '@angular/common/http'
 
 
 import {MaterialModule} from './material.module';
@@ -18,6 +20,7 @@ import { DebtSectionComponent } from './charts/debt-section/debt-section.compone
 import { InterestSectionComponent } from './charts/interest-section/interest-section.component';
 import { MarketSectionComponent } from './charts/market-section/market-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { TestSectComponent } from './test-sect/test-sect.component';
 
 @NgModule({
   declarations: [
@@ -32,16 +35,17 @@ import { FooterComponent } from './footer/footer.component';
     DebtSectionComponent,
     InterestSectionComponent,
     MarketSectionComponent,
-    FooterComponent
+    FooterComponent,
+    TestSectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,HttpClientModule
   ],
-  providers: [],
+  providers: [FinanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

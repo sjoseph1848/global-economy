@@ -1,11 +1,15 @@
-<mat-tab-group>
-        <mat-tab label="Debt Levels">
-            <app-debt-section></app-debt-section>
-        </mat-tab>
-        <mat-tab label="Interest Rates">
-            <app-interest-section></app-interest-section>
-        </mat-tab>
-        <mat-tab label="FAANG Stocks">
-                <app-market-section></app-market-section>
-        </mat-tab>
-    </mat-tab-group>
+<section class="chart-section">
+
+<!-- <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxFlxex.xs="100%"> -->
+
+
+        <!-- <div class="example-large-box mat-elevation-z4" fxFlxex.xs="50%" fxFlex.gt-sm="75%"> -->
+                <h3>Financial Sector</h3>
+                <mat-divider></mat-divider>
+    
+            <canvas id="canvas">{{chart}}</canvas>
+        <!-- </div>   -->
+        
+<!-- </div> -->
+
+</section>

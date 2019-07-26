@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { FinanceService } from '../../finance.service';
+import { FinanceService } from '../finance.service';
 import {Chart} from 'chart.js';
 
 @Component({
-  selector: 'app-market-section',
-  templateUrl: './market-section.component.html',
-  styleUrls: ['./market-section.component.scss']
+  selector: 'app-test-sect',
+  templateUrl: './test-sect.component.html',
+  styleUrls: ['./test-sect.component.scss']
 })
-export class MarketSectionComponent implements OnInit {
+
+export class TestSectComponent implements OnInit {
 
   chart = [];
 
-  title ='charts';
   constructor(private _finance:FinanceService) { }
 
   ngOnInit(){
