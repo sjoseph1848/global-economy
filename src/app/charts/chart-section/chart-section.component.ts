@@ -14,36 +14,84 @@ export class ChartSectionComponent implements OnInit {
   constructor(private _finance:FinanceService) { }
 
   ngOnInit(){
-    this._finance.amazonStock()
+    this._finance.findStock("AMZN")
       .subscribe(result => {
         console.log(result)
-        let close = result['historical'].map(result => result.close);
+        let amzn = result['historical'].map(result => result.close);
         console.log(close);
-        let open = result['historical'].map(result => result.open);
-        console.log(open)
         let alldate = result['historical'].map(result => result.date);
         console.log(alldate)
+
+        this._finance.findStock("AAPL")
+        .subscribe(result => {
+          console.log(result)
+          let aapl = result['historical'].map(result => result.close);
+          console.log(close);
+    
+
+          this._finance.findStock("FB")
+          .subscribe(result => {
+            console.log(result)
+            let facebook = result['historical'].map(result => result.close);
+            console.log(close);
        
-     
-     
+
+            this._finance.findStock("NFLX")
+            .subscribe(result => {
+              console.log(result)
+              let netflix = result['historical'].map(result => result.close);
+              console.log(close);
+             
+
+              this._finance.findStock("GOOGL")
+              .subscribe(result => {
+                console.log(result)
+                let google = result['historical'].map(result => result.close);
+                console.log(close);
+            
+       
+    
 
       this.chart.push(new Chart('canvas',{
         type: 'line',
+
         data: {
           labels: alldate,
           datasets: [
             {
-              data:close,
+              label:'Amazon',
+              data:amzn,
               borderColor: '#3cba9f',
               fill:false
             },
             {
-              data:open,
+              label:'Apple',
+              data:aapl,
               borderColor: '#ffcc00',
               fill:false
-            }
+            },
+            {
+              label:'Netflix',
+              data:netflix,
+              borderColor: '#ffcc00',
+              fill:false
+            },
+            {
+              label:'Facebook',
+              data:facebook,
+              borderColor: '#ffcc00',
+              fill:false
+            },
+            {
+              label:'Google',
+              data:google,
+              borderColor: '#ffcc00',
+              fill:false
+            },
           ]
         },
+
+
         options: {
           legend:{
             display:false
@@ -57,7 +105,20 @@ export class ChartSectionComponent implements OnInit {
             }]
           }
         }
+
       })
-    ,)})
+
+    ,)
+  
+  })
+
+})
+
+    })
+
+  })
+      })
+
+
   }
 }
