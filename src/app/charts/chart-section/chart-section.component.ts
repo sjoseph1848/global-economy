@@ -61,31 +61,31 @@ export class ChartSectionComponent implements OnInit {
             {
               label:'Amazon',
               data:amzn,
-              borderColor: '#3cba9f',
+              borderColor: '#F79C34',
               fill:false
             },
             {
               label:'Apple',
               data:aapl,
-              borderColor: '#ffcc00',
+              borderColor: '#7D7D7D',
               fill:false
             },
             {
               label:'Netflix',
               data:netflix,
-              borderColor: '#ffcc00',
+              borderColor: '#D81F26',
               fill:false
             },
             {
               label:'Facebook',
               data:facebook,
-              borderColor: '#ffcc00',
+              borderColor: '#3C5898',
               fill:false
             },
             {
               label:'Google',
               data:google,
-              borderColor: '#ffcc00',
+              borderColor: '#00A568',
               fill:false
             },
           ]
@@ -98,7 +98,7 @@ export class ChartSectionComponent implements OnInit {
           },
           scales:{
             xAxes:[{
-              display:true
+              display:false
             }],
             yAxes:[{
               display:true

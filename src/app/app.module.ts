@@ -14,13 +14,13 @@ import { LineComponent } from './charts/components/line/line.component';
 import { PieComponent } from './charts/components/pie/pie.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { InfoSectionComponent } from './info-section/info-section.component';
+import { InfoSectionComponent } from './top-section/info-section/info-section.component';
 import { ChartSectionComponent } from './charts/chart-section/chart-section.component';
 import { DebtSectionComponent } from './charts/debt-section/debt-section.component';
-import { InterestSectionComponent } from './charts/interest-section/interest-section.component';
-import { MarketSectionComponent } from './charts/market-section/market-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { TestSectComponent } from './test-sect/test-sect.component';
+import { TodayComponent } from './top-section/today/today.component';
+import { TodayStockComponent } from './top-section/today-stock/today-stock.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +33,10 @@ import { TestSectComponent } from './test-sect/test-sect.component';
     InfoSectionComponent,
     ChartSectionComponent,
     DebtSectionComponent,
-    InterestSectionComponent,
-    MarketSectionComponent,
     FooterComponent,
-    TestSectComponent
+    TestSectComponent,
+    TodayComponent,
+    TodayStockComponent
   ],
   imports: [
     BrowserModule,
