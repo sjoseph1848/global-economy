@@ -18,7 +18,6 @@ import { InfoSectionComponent } from './top-section/info-section/info-section.co
 import { ChartSectionComponent } from './charts/chart-section/chart-section.component';
 import { DebtSectionComponent } from './charts/debt-section/debt-section.component';
 import { FooterComponent } from './footer/footer.component';
-import { TestSectComponent } from './test-sect/test-sect.component';
 import { TodayComponent } from './top-section/today/today.component';
 import { TodayStockComponent } from './top-section/today-stock/today-stock.component';
 
@@ -34,7 +33,6 @@ import { TodayStockComponent } from './top-section/today-stock/today-stock.compo
     ChartSectionComponent,
     DebtSectionComponent,
     FooterComponent,
-    TestSectComponent,
     TodayComponent,
     TodayStockComponent
   ],
