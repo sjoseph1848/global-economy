@@ -9,13 +9,13 @@ import {Chart} from 'chart.js';
 })
 export class DebtSectionComponent implements OnInit {
 
-  debt = [];
+  chart = [];
 
   constructor() { }
 
   ngOnInit() {
 
-    this.debt.push(new Chart('debt',{
+    this.chart.push(new Chart('canvas',{
       type: 'line',
 
       data: {
