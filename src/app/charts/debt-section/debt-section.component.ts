@@ -24,7 +24,7 @@ export class DebtSectionComponent implements OnInit {
           {
             label:'United States',
             data:[61.99,66.37,68.61,70.19,69.39,68.80,68.03,65.62,62.47,58.88,53.03,53.02,55.38,58.52,65.49,64.89,63.64,64.01,72.85],
-            borderColor: '#F79C34',
+            borderColor: '#3D41B9',
             fill:false
           },
         ]

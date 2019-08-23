@@ -1,0 +1,36 @@
+<section class="info" fxLayoutGap="20px" fxLayoutAlign="left">
+    <div fxLayout="row" fxLayout.xs="column">
+        <mat-tab-group>
+            <mat-tab label="First">
+              <ng-template matTabContent>
+                <div>
+                    <div class="bar" style="display: block">
+                      <canvas baseChart
+                              [datasets]="barChartData"
+                              [labels]="barChartLabels"
+                              [options]="barChartOptions"
+                              [legend]="barChartLegend"
+                              [chartType]="barChartType">
+                      </canvas>
+                    </div>
+                  </div>
+              </ng-template>
+            </mat-tab>
+            <mat-tab label="Second">
+              <ng-template matTabContent>
+                <div>
+                    <div class="bar" style="display: block">
+                      <canvas baseChart
+                              [datasets]="barChartData"
+                              [labels]="barChartLabels"
+                              [options]="barChartOptions"
+                              [legend]="barChartLegend"
+                              [chartType]="barChartType">
+                      </canvas>
+                    </div>
+                  </div>
+              </ng-template>
+            </mat-tab>
+          </mat-tab-group>
+    </div>
+</section>

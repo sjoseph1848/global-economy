@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {FinanceService} from './finance.service';
 import {HttpClientModule} from '@angular/common/http'
-
+import { ChartsModule } from 'ng2-charts';
 
 import {MaterialModule} from './material.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import { DebtSectionComponent } from './charts/debt-section/debt-section.compone
 import { FooterComponent } from './footer/footer.component';
 import { TodayComponent } from './top-section/today/today.component';
 import { TodayStockComponent } from './top-section/today-stock/today-stock.component';
+import { DebtComponent } from './bottom-section/debt/debt.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +35,15 @@ import { TodayStockComponent } from './top-section/today-stock/today-stock.compo
     DebtSectionComponent,
     FooterComponent,
     TodayComponent,
-    TodayStockComponent
+    TodayStockComponent,
+    DebtComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,HttpClientModule
+    FlexLayoutModule,HttpClientModule,ChartsModule
   ],
   providers: [FinanceService],
   bootstrap: [AppComponent]
