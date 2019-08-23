@@ -1,10 +1,10 @@
-<section class="info" fxLayoutGap="20px" fxLayoutAlign="left">
-    <div fxLayout="row" fxLayout.xs="column">
-        <mat-tab-group>
-            <mat-tab label="First">
+<section class="info" fxLayoutGap="20px" fxLayoutAlign="center" >
+    <div fxLayout="row" fxLayout.xs="column" fxFlex.gt-sm="100%">
+        <mat-tab-group fxLayoutGap="20px" fxFlex.gt-sm="100%" >
+            <mat-tab label="GDP to Debt: 2000 - 2008">
               <ng-template matTabContent>
                 <div>
-                    <div class="bar" style="display: block">
+                    <div class="bar" style="display: block" fxFlex.gt-sm="100%">
                       <canvas baseChart
                               [datasets]="barChartData"
                               [labels]="barChartLabels"
@@ -16,7 +16,7 @@
                   </div>
               </ng-template>
             </mat-tab>
-            <mat-tab label="Second">
+            <mat-tab label="GDP to Debt: 2008 - 2015">
               <ng-template matTabContent>
                 <div>
                     <div class="bar" style="display: block">
